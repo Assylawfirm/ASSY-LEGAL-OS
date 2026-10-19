@@ -27,38 +27,38 @@ footer{padding:20px 0;font-size:.86rem}
 <footer>مصدر التشريع: <a href="https://egyls.com/قانون-المحاماة/" target="_blank" rel="noopener">نقابة المحامين المصرية</a>. حالة المرجع كما بتاريخ 19 أكتوبر 2026. يتطلب الاعتماد فحص الجريدة الرسمية ومنطوق الأحكام ومراجعة محامٍ مختص.</footer>
 <script>
 "use strict";
-const noteItems=[
-{kind:"notice",name:"المادة 30: ملغاة",desc:"القانون 147 لسنة 2019؛ يلزم مراجعة أداة الإلغاء والنفاذ.",source:"https://egyls.com/قانون-المحاماة/"},
-{kind:"notice",name:"المادة 153: ملغاة",desc:"ألغيت بالقانون 147 لسنة 2019.",source:"https://egyls.com/قانون-المحاماة/"},
-{kind:"notice",name:"المادة 136: إلغاء الفقرة الثانية فقط",desc:"لا يجوز تصنيف المادة كلها ملغاة.",source:"https://egyls.com/قانون-المحاماة/"},
-{kind:"notice",name:"المادة 50 مكررًا: تعارض إحالة",desc:"اختلاف منشور في الإشارة (40 و50) أو (49 و50). لا يقتبس النص حتى مطابقة الجريدة الرسمية.",source:"https://egyls.com/قانون-المحاماة/"},
-{kind:"notice",name:"المادة 55: أثر جزئي لأحكام دستورية",desc:"لا تصنف المادة بأكملها غير دستورية؛ افحص منطوق كل حكم ونطاقه الزمني.",source:"https://egyls.com/قانون-المحاماة/"},
-{kind:"notice",name:"المادة 229: الإحالة إلى القواعد الإجرائية",desc:"البطلان وفق المادة 331 إجراءات لا يصبح متعلقًا بالنظام العام تلقائيًا.",source:"https://egyls.com/قانون-المحاماة/"}
-];
-const cases=[
-{kind:"case",name:"الدستورية 150 لسنة 35 ق – 3/11/2018",desc:"اختصاص طعون رفض القيد؛ المواد 19 و33 و36. يلزم التحقق من النشر الرسمي.",source:"https://manshurat.org/"},
-{kind:"case",name:"الدستورية 161 لسنة 36 ق – 4/7/2020",desc:"اختصاص طعون النقل إلى غير المشتغلين والترشيح؛ المادتان 44 و134.",source:"https://www.sccourt.gov.eg/"},
-{kind:"case",name:"الدستورية 160 لسنة 33 ق – 2/3/2019",desc:"مشاركة أعضاء مجلس النقابة طالب الإحالة في مجلس التأديب؛ المادتان 107 و116.",source:"https://www.sccourt.gov.eg/"},
-{kind:"case",name:"الدستورية 28 لسنة 38 ق – 3/11/2018",desc:"رفض الدعوى الدستورية بشأن المادة 37، وليس حكمًا بعدم الدستورية.",source:"https://www.sccourt.gov.eg/"},
-{kind:"case",name:"النقض 1649 لسنة 72 ق – 1/6/2014",desc:"توقيع الصحيفة من محام مقبول ولو أعدها غيره؛ المادة 58. مطابقة الأصل القضائي لازمة.",source:"https://egyls.com/"}
-];
-const focus={14:"الأعمال المحظور الجمع بينها وبين المحاماة",19:"طعون رفض القيد",30:"مادة ملغاة",37:"التوقيع والاختصاص أمام الاستئناف",44:"النقل إلى غير المشتغلين",49:"ضمانات المحامي داخل الجلسة",50:"ضمانات المحامي",51:"التحقيق والتفتيش والقبض",55:"مكتب المحامي",58:"توقيع صحف الدعاوى",107:"مجالس التأديب",116:"الطعون التأديبية",134:"الترشح والطعون",136:"مدة المجلس – الفقرة الثانية ملغاة",153:"مادة ملغاة",229:"قواعد البطلان"};
-const articles=Array.from({length:231},(_,i)=>({kind:"article",name:"المادة "+(i+1),desc:focus[i+1]||"فهرس المادة؛ النص الكامل والشرح الموثق لم يراجعا بعد.",source:"https://egyls.com/قانون-المحاماة/"}));
-const data=[...articles,...cases,...noteItems];
 const q=document.getElementById("q"),kind=document.getElementById("kind"),results=document.getElementById("results"),count=document.getElementById("count");
+let data=[];
 function paint(){
- const s=q.value.trim().toLowerCase(), k=kind.value;
- const found=data.filter(x=>(k==="all"||x.kind===k) && (x.name+" "+x.desc).toLowerCase().includes(s));
- count.textContent="عدد النتائج: "+found.length+" (كل النتائج بحثية وغير معتمدة للاقتباس)";
- results.replaceChildren();
- for(const x of found.slice(0,100)){
-   const el=document.createElement("article");const h=document.createElement("h3");h.textContent=x.name;el.append(h);
-   const p=document.createElement("p");p.textContent=x.desc;el.append(p);
-   const st=document.createElement("span");st.className="tag";st.textContent=x.kind==="article"?"المادة – قيد المطابقة":x.kind==="case"?"حكم – المصدر الأصلي مطلوب":"ملاحظة تدقيق";el.append(st);
-   const link=document.createElement("p"),a=document.createElement("a");a.href=x.source;a.rel="noopener noreferrer";a.target="_blank";a.textContent="المصدر المرجعي";link.append(a);el.append(link);results.append(el)
- }
- if(found.length>100){const p=document.createElement("p");p.textContent="أول 100 نتيجة فقط؛ استخدم البحث لتضييق النتائج.";results.append(p)}
+const s=q.value.trim().toLocaleLowerCase("ar"),k=kind.value;
+const match=data.filter(x=>(k==="all"||x.kind===k)&&(x.name+" "+x.desc).toLocaleLowerCase("ar").includes(s));
+count.textContent="النتائج "+match.length+" — لا توجد نصوص معتمدة للاقتباس";
+results.replaceChildren();
+for(const x of match.slice(0,100)){
+const el=document.createElement("article"),h=document.createElement("h3"),p=document.createElement("p"),badge=document.createElement("span");
+h.textContent=x.name;p.textContent=x.desc;badge.textContent="قيد المراجعة — الاقتباس غير معتمد";badge.className="tag";
+el.append(h,p,badge);results.append(el)
 }
+if(match.length>100){const more=document.createElement("p");more.textContent="تظهر أول 100 نتيجة؛ استخدم خانة البحث لتضييق النتائج.";results.append(more)}
+}
+async function load(){
+try{
+const res=await fetch("./research_index_v13.json",{cache:"no-store"});
+if(!res.ok)throw new Error("HTTP "+res.status);
+const d=await res.json();
+if(d.schema!=="assy-law-index.v13"||!Array.isArray(d.articles)||d.articles.length!==238)throw new Error("تنسيق البيانات غير مطابق");
+data=[
+...d.articles.map(x=>({kind:"article",name:"المادة "+x.number,desc:x.subject+" — النص الكامل غير معتمد"})),
+...d.cases.map(x=>({kind:"case",name:x.case_number,desc:x.summary+" | المواد "+x.articles+" | "+x.date})),
+...d.defenses.map(x=>({kind:"notice",name:"الإجراءات الجنائية — مادة "+x.provision,desc:"قيد مراجعة النص والحكم القضائي"}))
+];
+paint()
+}catch(err){
+count.textContent="تعذر تحميل ملف البيانات المستقل: "+err.message;
+const p=document.createElement("article");p.textContent="لتشغيل البحث افتح الصفحة عبر خادم HTTP أو GitHub Pages؛ فتح HTML مباشرة بصيغة file:// قد يمنع تحميل JSON. لم تُحمّل أية نتائج غير معتمدة.";
+results.replaceChildren(p)
+}}
 q.addEventListener("input",paint);kind.addEventListener("change",paint);
-document.getElementById("reset").addEventListener("click",()=>{q.value="";kind.value="all";paint()});paint();
+document.getElementById("reset").addEventListener("click",()=>{q.value="";kind.value="all";paint()});
+load();
 </script></body></html>
