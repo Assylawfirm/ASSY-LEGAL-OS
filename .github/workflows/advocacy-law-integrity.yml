@@ -23,3 +23,5 @@ jobs:
         run: python3 --version
       - name: Validate research index and citation safeguards
         run: python3 legal_research/advocacy_law/validate_index.py
+      - name: Test official-source approval gate
+        run: python3 -m unittest discover -s legal_research/advocacy_law -p 'test_approval_gate.py' -v
