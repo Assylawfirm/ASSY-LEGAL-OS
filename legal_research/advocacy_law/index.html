@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASSY LEGAL OS | محرك مراجعة قانون المحاماة</title>
+<style>
+:root{font-family:Tahoma,Arial,sans-serif;color:#172340;background:#f5f7fc}
+body{max-width:1140px;margin:0 auto;padding:25px 18px}
+header{background:#0047ff;color:white;border-radius:16px;padding:24px}
+h1{font-size:1.6rem;margin:0 0 7px}h2{font-size:1.15rem}
+small,.meta{color:#57627e}.warn{background:#fff6dc;border-right:5px solid #b87b00;padding:14px;border-radius:9px;margin:18px 0}
+.controls{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+input,select{border:1px solid #b9c7e6;background:white;border-radius:9px;padding:11px;font:inherit;flex:1;min-width:180px}
+article{background:white;border:1px solid #dce4f5;margin:12px 0;padding:17px;border-radius:12px}
+article h3{margin:0 0 8px;color:#0047aa}
+a{color:#0047ff} button{font:inherit;border:0;background:#0047ff;color:white;padding:10px 15px;border-radius:9px;cursor:pointer}
+.tag{display:inline-block;padding:4px 9px;border-radius:15px;background:#eaf0ff;font-size:.78rem}
+footer{padding:20px 0;font-size:.86rem}
+</style></head>
+<body>
+<header><h1>ASSY LEGAL OS – محرك مراجعة قانون المحاماة</h1>
+<div>ASSY LAW FIRM | مستشارك الشخصي في مصر</div>
+<p>عرض بحثي لفهرس المواد وإشارات التعديل والأحكام؛ ليس نسخة رسمية معتمدة للقانون.</p></header>
+<div class="warn"><strong>بوابة سلامة الاقتباس:</strong> لا توجد بهذه الواجهة نصوص كاملة للمادة تمت مطابقتها رسميًا. لا يجوز نسخ أي نتيجة بوصفها نصًا تشريعيًا معتمدًا أو حكمًا قضائيًا موثقًا من أصله.</div>
+<div class="controls"><input id="q" aria-label="بحث" placeholder="ابحث برقم مادة أو موضوع أو حكم">
+<select id="kind" aria-label="نوع السجل"><option value="all">جميع السجلات</option><option value="article">المواد (1–231)</option><option value="case">السوابق القضائية</option><option value="notice">ملاحظات وتصحيحات</option></select>
+<button id="reset">إعادة تعيين</button></div>
+<p id="count" role="status"></p><main id="results"></main>
+<footer>مصدر التشريع: <a href="https://egyls.com/قانون-المحاماة/" target="_blank" rel="noopener">نقابة المحامين المصرية</a>. حالة المرجع كما بتاريخ 19 أكتوبر 2026. يتطلب الاعتماد فحص الجريدة الرسمية ومنطوق الأحكام ومراجعة محامٍ مختص.</footer>
+<script>
+"use strict";
+const noteItems=[
+{kind:"notice",name:"المادة 30: ملغاة",desc:"القانون 147 لسنة 2019؛ يلزم مراجعة أداة الإلغاء والنفاذ.",source:"https://egyls.com/قانون-المحاماة/"},
+{kind:"notice",name:"المادة 153: ملغاة",desc:"ألغيت بالقانون 147 لسنة 2019.",source:"https://egyls.com/قانون-المحاماة/"},
+{kind:"notice",name:"المادة 136: إلغاء الفقرة الثانية فقط",desc:"لا يجوز تصنيف المادة كلها ملغاة.",source:"https://egyls.com/قانون-المحاماة/"},
+{kind:"notice",name:"المادة 50 مكررًا: تعارض إحالة",desc:"اختلاف منشور في الإشارة (40 و50) أو (49 و50). لا يقتبس النص حتى مطابقة الجريدة الرسمية.",source:"https://egyls.com/قانون-المحاماة/"},
+{kind:"notice",name:"المادة 55: أثر جزئي لأحكام دستورية",desc:"لا تصنف المادة بأكملها غير دستورية؛ افحص منطوق كل حكم ونطاقه الزمني.",source:"https://egyls.com/قانون-المحاماة/"},
+{kind:"notice",name:"المادة 229: الإحالة إلى القواعد الإجرائية",desc:"البطلان وفق المادة 331 إجراءات لا يصبح متعلقًا بالنظام العام تلقائيًا.",source:"https://egyls.com/قانون-المحاماة/"}
+];
+const cases=[
+{kind:"case",name:"الدستورية 150 لسنة 35 ق – 3/11/2018",desc:"اختصاص طعون رفض القيد؛ المواد 19 و33 و36. يلزم التحقق من النشر الرسمي.",source:"https://manshurat.org/"},
+{kind:"case",name:"الدستورية 161 لسنة 36 ق – 4/7/2020",desc:"اختصاص طعون النقل إلى غير المشتغلين والترشيح؛ المادتان 44 و134.",source:"https://www.sccourt.gov.eg/"},
+{kind:"case",name:"الدستورية 160 لسنة 33 ق – 2/3/2019",desc:"مشاركة أعضاء مجلس النقابة طالب الإحالة في مجلس التأديب؛ المادتان 107 و116.",source:"https://www.sccourt.gov.eg/"},
+{kind:"case",name:"الدستورية 28 لسنة 38 ق – 3/11/2018",desc:"رفض الدعوى الدستورية بشأن المادة 37، وليس حكمًا بعدم الدستورية.",source:"https://www.sccourt.gov.eg/"},
+{kind:"case",name:"النقض 1649 لسنة 72 ق – 1/6/2014",desc:"توقيع الصحيفة من محام مقبول ولو أعدها غيره؛ المادة 58. مطابقة الأصل القضائي لازمة.",source:"https://egyls.com/"}
+];
+const focus={14:"الأعمال المحظور الجمع بينها وبين المحاماة",19:"طعون رفض القيد",30:"مادة ملغاة",37:"التوقيع والاختصاص أمام الاستئناف",44:"النقل إلى غير المشتغلين",49:"ضمانات المحامي داخل الجلسة",50:"ضمانات المحامي",51:"التحقيق والتفتيش والقبض",55:"مكتب المحامي",58:"توقيع صحف الدعاوى",107:"مجالس التأديب",116:"الطعون التأديبية",134:"الترشح والطعون",136:"مدة المجلس – الفقرة الثانية ملغاة",153:"مادة ملغاة",229:"قواعد البطلان"};
+const articles=Array.from({length:231},(_,i)=>({kind:"article",name:"المادة "+(i+1),desc:focus[i+1]||"فهرس المادة؛ النص الكامل والشرح الموثق لم يراجعا بعد.",source:"https://egyls.com/قانون-المحاماة/"}));
+const data=[...articles,...cases,...noteItems];
+const q=document.getElementById("q"),kind=document.getElementById("kind"),results=document.getElementById("results"),count=document.getElementById("count");
+function paint(){
+ const s=q.value.trim().toLowerCase(), k=kind.value;
+ const found=data.filter(x=>(k==="all"||x.kind===k) && (x.name+" "+x.desc).toLowerCase().includes(s));
+ count.textContent="عدد النتائج: "+found.length+" (كل النتائج بحثية وغير معتمدة للاقتباس)";
+ results.replaceChildren();
+ for(const x of found.slice(0,100)){
+   const el=document.createElement("article");const h=document.createElement("h3");h.textContent=x.name;el.append(h);
+   const p=document.createElement("p");p.textContent=x.desc;el.append(p);
+   const st=document.createElement("span");st.className="tag";st.textContent=x.kind==="article"?"المادة – قيد المطابقة":x.kind==="case"?"حكم – المصدر الأصلي مطلوب":"ملاحظة تدقيق";el.append(st);
+   const link=document.createElement("p"),a=document.createElement("a");a.href=x.source;a.rel="noopener noreferrer";a.target="_blank";a.textContent="المصدر المرجعي";link.append(a);el.append(link);results.append(el)
+ }
+ if(found.length>100){const p=document.createElement("p");p.textContent="أول 100 نتيجة فقط؛ استخدم البحث لتضييق النتائج.";results.append(p)}
+}
+q.addEventListener("input",paint);kind.addEventListener("change",paint);
+document.getElementById("reset").addEventListener("click",()=>{q.value="";kind.value="all";paint()});paint();
+</script></body></html>
