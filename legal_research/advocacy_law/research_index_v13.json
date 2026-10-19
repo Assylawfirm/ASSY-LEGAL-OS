@@ -1,0 +1,1990 @@
+{
+  "schema": "assy-law-index.v13",
+  "as_of": "2026-10-19",
+  "notice": "Research only; primary gazette and court texts not approved",
+  "articles": [
+    {
+      "article_id": "LAW17-ART-001",
+      "number": "1",
+      "subject": "استقلال مهنة المحاماة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-002",
+      "number": "2",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-003",
+      "number": "3",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-004",
+      "number": "4",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-005",
+      "number": "5",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-006",
+      "number": "6",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-007",
+      "number": "7",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-008",
+      "number": "8",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-009",
+      "number": "9",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-010",
+      "number": "10",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-011",
+      "number": "11",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-012",
+      "number": "12",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-013",
+      "number": "13",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-014",
+      "number": "14",
+      "subject": "عدم الجمع",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-015",
+      "number": "15",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-016",
+      "number": "16",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-017",
+      "number": "17",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-018",
+      "number": "18",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-019",
+      "number": "19",
+      "subject": "قيد المحامين",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-020",
+      "number": "20",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-021",
+      "number": "21",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-022",
+      "number": "22",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-023",
+      "number": "23",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-024",
+      "number": "24",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-025",
+      "number": "25",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-026",
+      "number": "26",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-027",
+      "number": "27",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-028",
+      "number": "28",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-029",
+      "number": "29",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-030",
+      "number": "30",
+      "subject": "ملغاة في 2019",
+      "text": null,
+      "status": "repealed_research",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-031",
+      "number": "31",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-032",
+      "number": "32",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-033",
+      "number": "33",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-034",
+      "number": "34",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-035",
+      "number": "35",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-036",
+      "number": "36",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-037",
+      "number": "37",
+      "subject": "توقيع صحف الاستئناف",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-038",
+      "number": "38",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-039",
+      "number": "39",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-040",
+      "number": "40",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-041",
+      "number": "41",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-042",
+      "number": "42",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-043",
+      "number": "43",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-044",
+      "number": "44",
+      "subject": "النقل إلى غير المشتغلين",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-045",
+      "number": "45",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-046",
+      "number": "46",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-047",
+      "number": "47",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-048",
+      "number": "48",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-049",
+      "number": "49",
+      "subject": "ضمانات الجلسة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-050",
+      "number": "50",
+      "subject": "ضمانات المرافعة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-051",
+      "number": "51",
+      "subject": "التحقيق مع المحامي وتفتيش المكتب",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-052",
+      "number": "52",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-053",
+      "number": "53",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-054",
+      "number": "54",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-055",
+      "number": "55",
+      "subject": "مكتب المحامي",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-056",
+      "number": "56",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-057",
+      "number": "57",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-058",
+      "number": "58",
+      "subject": "صحف الدعاوى والطعون",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-059",
+      "number": "59",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-060",
+      "number": "60",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-061",
+      "number": "61",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-062",
+      "number": "62",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-063",
+      "number": "63",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-064",
+      "number": "64",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-065",
+      "number": "65",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-066",
+      "number": "66",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-067",
+      "number": "67",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-068",
+      "number": "68",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-069",
+      "number": "69",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-070",
+      "number": "70",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-071",
+      "number": "71",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-072",
+      "number": "72",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-073",
+      "number": "73",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-074",
+      "number": "74",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-075",
+      "number": "75",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-076",
+      "number": "76",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-077",
+      "number": "77",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-078",
+      "number": "78",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-079",
+      "number": "79",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-080",
+      "number": "80",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-081",
+      "number": "81",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-082",
+      "number": "82",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-083",
+      "number": "83",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-084",
+      "number": "84",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-085",
+      "number": "85",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-086",
+      "number": "86",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-087",
+      "number": "87",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-088",
+      "number": "88",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-089",
+      "number": "89",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-090",
+      "number": "90",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-091",
+      "number": "91",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-092",
+      "number": "92",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-093",
+      "number": "93",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-094",
+      "number": "94",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-095",
+      "number": "95",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-096",
+      "number": "96",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-097",
+      "number": "97",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-098",
+      "number": "98",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-099",
+      "number": "99",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-100",
+      "number": "100",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-101",
+      "number": "101",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-102",
+      "number": "102",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-103",
+      "number": "103",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-104",
+      "number": "104",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-105",
+      "number": "105",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-106",
+      "number": "106",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-107",
+      "number": "107",
+      "subject": "المساءلة التأديبية",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-108",
+      "number": "108",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-109",
+      "number": "109",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-110",
+      "number": "110",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-111",
+      "number": "111",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-112",
+      "number": "112",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-113",
+      "number": "113",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-114",
+      "number": "114",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-115",
+      "number": "115",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-116",
+      "number": "116",
+      "subject": "تأديب المحامي والطعن",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-117",
+      "number": "117",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-118",
+      "number": "118",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-119",
+      "number": "119",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-120",
+      "number": "120",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-121",
+      "number": "121",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-122",
+      "number": "122",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-123",
+      "number": "123",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-124",
+      "number": "124",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-125",
+      "number": "125",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-126",
+      "number": "126",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-127",
+      "number": "127",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-128",
+      "number": "128",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-129",
+      "number": "129",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-130",
+      "number": "130",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-131",
+      "number": "131",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-132",
+      "number": "132",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-133",
+      "number": "133",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-134",
+      "number": "134",
+      "subject": "الترشيح النقابي",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-135",
+      "number": "135",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-136",
+      "number": "136",
+      "subject": "مدة مجلس النقابة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-137",
+      "number": "137",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-138",
+      "number": "138",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-139",
+      "number": "139",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-140",
+      "number": "140",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-141",
+      "number": "141",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-142",
+      "number": "142",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-143",
+      "number": "143",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-144",
+      "number": "144",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-145",
+      "number": "145",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-146",
+      "number": "146",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-147",
+      "number": "147",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-148",
+      "number": "148",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-149",
+      "number": "149",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-150",
+      "number": "150",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-151",
+      "number": "151",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-152",
+      "number": "152",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-153",
+      "number": "153",
+      "subject": "ملغاة في 2019",
+      "text": null,
+      "status": "repealed_research",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-154",
+      "number": "154",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-155",
+      "number": "155",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-156",
+      "number": "156",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-157",
+      "number": "157",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-158",
+      "number": "158",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-159",
+      "number": "159",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-160",
+      "number": "160",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-161",
+      "number": "161",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-162",
+      "number": "162",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-163",
+      "number": "163",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-164",
+      "number": "164",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-165",
+      "number": "165",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-166",
+      "number": "166",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-167",
+      "number": "167",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-168",
+      "number": "168",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-169",
+      "number": "169",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-170",
+      "number": "170",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-171",
+      "number": "171",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-172",
+      "number": "172",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-173",
+      "number": "173",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-174",
+      "number": "174",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-175",
+      "number": "175",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-176",
+      "number": "176",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-177",
+      "number": "177",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-178",
+      "number": "178",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-179",
+      "number": "179",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-180",
+      "number": "180",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-181",
+      "number": "181",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-182",
+      "number": "182",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-183",
+      "number": "183",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-184",
+      "number": "184",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-185",
+      "number": "185",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-186",
+      "number": "186",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-187",
+      "number": "187",
+      "subject": "أتعاب الصندوق",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-188",
+      "number": "188",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-189",
+      "number": "189",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-190",
+      "number": "190",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-191",
+      "number": "191",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-192",
+      "number": "192",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-193",
+      "number": "193",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-194",
+      "number": "194",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-195",
+      "number": "195",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-196",
+      "number": "196",
+      "subject": "معاش المحامي",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-197",
+      "number": "197",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-198",
+      "number": "198",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-199",
+      "number": "199",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-200",
+      "number": "200",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-201",
+      "number": "201",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-202",
+      "number": "202",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-203",
+      "number": "203",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-204",
+      "number": "204",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-205",
+      "number": "205",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-206",
+      "number": "206",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-207",
+      "number": "207",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-208",
+      "number": "208",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-209",
+      "number": "209",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-210",
+      "number": "210",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-211",
+      "number": "211",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-212",
+      "number": "212",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-213",
+      "number": "213",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-214",
+      "number": "214",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-215",
+      "number": "215",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-216",
+      "number": "216",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-217",
+      "number": "217",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-218",
+      "number": "218",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-219",
+      "number": "219",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-220",
+      "number": "220",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-221",
+      "number": "221",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-222",
+      "number": "222",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-223",
+      "number": "223",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-224",
+      "number": "224",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-225",
+      "number": "225",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-226",
+      "number": "226",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-227",
+      "number": "227",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-228",
+      "number": "228",
+      "subject": "قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-229",
+      "number": "229",
+      "subject": "البطلان الإجرائي",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-230",
+      "number": "230",
+      "subject": "أكاديمية المحاماة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-231",
+      "number": "231",
+      "subject": "مجلس إدارة الأكاديمية",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-13-مكرر",
+      "number": "13 مكرر",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-46-مكرر",
+      "number": "46 مكرر",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-50-مكرر",
+      "number": "50 مكرر",
+      "subject": "إحالة نصية مختلف عليها",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-135-مكرر",
+      "number": "135 مكرر",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-156-مكرر",
+      "number": "156 مكرر",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-156-مكرر-(1)",
+      "number": "156 مكرر (1)",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    },
+    {
+      "article_id": "LAW17-ART-206-مكرر",
+      "number": "206 مكرر",
+      "subject": "مادة مكررة — قيد المطابقة",
+      "text": null,
+      "status": "unverified",
+      "citation_approved": false
+    }
+  ],
+  "cases": [
+    {
+      "id": "CASE-1",
+      "case_number": "150 لسنة 35",
+      "date": "2018-11-03",
+      "articles": "19،33،36",
+      "summary": "الطعن في قرارات رفض القيد",
+      "primary_verified": false,
+      "citation_approved": false
+    },
+    {
+      "id": "CASE-2",
+      "case_number": "161 لسنة 36",
+      "date": "2020-07-04",
+      "articles": "44،134",
+      "summary": "اختصاص منازعات النقل والترشيح",
+      "primary_verified": false,
+      "citation_approved": false
+    },
+    {
+      "id": "CASE-3",
+      "case_number": "160 لسنة 33",
+      "date": "2019-03-02",
+      "articles": "107،116",
+      "summary": "تشكيل مجلس التأديب",
+      "primary_verified": false,
+      "citation_approved": false
+    },
+    {
+      "id": "CASE-4",
+      "case_number": "28 لسنة 38",
+      "date": "2018-11-03",
+      "articles": "37",
+      "summary": "رفض الدعوى الدستورية",
+      "primary_verified": false,
+      "citation_approved": false
+    },
+    {
+      "id": "CASE-5",
+      "case_number": "1649 لسنة 72",
+      "date": "2014-06-01",
+      "articles": "58",
+      "summary": "توقيع صحيفة الدعوى",
+      "primary_verified": false,
+      "citation_approved": false
+    }
+  ],
+  "defenses": [
+    {
+      "id": "CPA-331",
+      "provision": 331,
+      "status": "review_required"
+    },
+    {
+      "id": "CPA-332",
+      "provision": 332,
+      "status": "review_required"
+    },
+    {
+      "id": "CPA-333",
+      "provision": 333,
+      "status": "review_required"
+    },
+    {
+      "id": "CPA-334",
+      "provision": 334,
+      "status": "review_required"
+    },
+    {
+      "id": "CPA-335",
+      "provision": 335,
+      "status": "review_required"
+    },
+    {
+      "id": "CPA-336",
+      "provision": 336,
+      "status": "review_required"
+    }
+  ]
+}
