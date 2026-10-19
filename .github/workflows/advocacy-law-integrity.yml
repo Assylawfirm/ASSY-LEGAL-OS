@@ -1,0 +1,25 @@
+name: Advocacy Law Research Integrity
+on:
+  push:
+    paths:
+      - 'legal_research/advocacy_law/**'
+      - '.github/workflows/advocacy-law-integrity.yml'
+  pull_request:
+    paths:
+      - 'legal_research/advocacy_law/**'
+      - '.github/workflows/advocacy-law-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Check Python version
+        run: python3 --version
+      - name: Validate research index and citation safeguards
+        run: python3 legal_research/advocacy_law/validate_index.py
