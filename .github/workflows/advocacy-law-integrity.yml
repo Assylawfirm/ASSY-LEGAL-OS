@@ -28,3 +28,6 @@ jobs:
 
       - name: Test reviewer authorization and chained audit trail
         run: python3 -m unittest discover -s legal_research/advocacy_law -p 'test_review_workflow.py' -v
+
+      - name: Test persistent staged approval and audit chain
+        run: python3 -m unittest discover -s legal_research/advocacy_law -p 'test_persistent_review.py' -v
