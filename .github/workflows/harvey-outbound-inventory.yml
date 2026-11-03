@@ -1,0 +1,35 @@
+name: Harvey outbound-path static inventory
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'proposals/harvey/**'
+      - '.github/workflows/harvey-outbound-inventory.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Clone upstream without executing it
+        run: |
+          git clone --depth 1 https://github.com/ethanplusai/harvey.git upstream-harvey
+          git -C upstream-harvey rev-parse HEAD
+      - name: Parse and inventory outbound code paths
+        run: |
+          python proposals/harvey/inventory_outbound_paths.py upstream-harvey | tee outbound-inventory.json
+          python -m json.tool outbound-inventory.json > /dev/null
+      - name: Upload inventory for human security review
+        uses: actions/upload-artifact@v4
+        with:
+          name: harvey-outbound-inventory
+          path: outbound-inventory.json
+          retention-days: 14
