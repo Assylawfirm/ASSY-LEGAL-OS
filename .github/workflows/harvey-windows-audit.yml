@@ -31,6 +31,11 @@ jobs:
         run: |
           python -m venv .audit-venv
           if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Upgrade packaging tools before installing upstream
+        shell: pwsh
+        run: |
+          .\\.audit-venv\\Scripts\\python.exe -m pip install --upgrade 'pip>=26.2' 'setuptools>=84.1.0'
+          if ($LASTEXITCODE -ne 0) { exit 1 }
       - name: Install Harvey and pip-audit
         shell: pwsh
         run: |
