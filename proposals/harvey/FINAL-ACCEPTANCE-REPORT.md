@@ -9,10 +9,10 @@ Decision: **CONDITIONAL LAB ACCEPTANCE ONLY — PRODUCTION NO-GO**
 - Static configuration fail-closed tests: 41588572126, success.
 - Outbound-path AST inventory: 41588572137, success; 454 keyword-matched references, not verified vulnerabilities.
 - Security review: proposals/harvey/SECURITY-REVIEW.md.
-- New synthetic-only transport policy tests: proposals/harvey/test_offline_policy_simulation.py and workflow harvey-offline-policy.yml. Their results MUST be read from the associated GitHub Actions run before claiming success.
+- New synthetic-only transport policy tests: proposals/harvey/test_offline_policy_simulation.py and workflow harvey-offline-policy.yml. Verified successful in GitHub Actions run 41593338947 on commit 45c1cc357477cfc9da8031f61d5d879c6810aaa4. These are policy-simulation tests, not upstream Harvey runtime tests.
 
 ## Gate 1 — runtime isolation
-PARTIAL. Synthetic policy simulation tests denial, manual approval, zero quota, consent and a transport that always rejects outbound attempts. This is a model of proposed ASSY safeguards, **not Harvey's actual runtime or real provider adapters**. No live-agent, real-network sandbox, or mocked-upstream integration test completed.
+PARTIAL (simulation CI PASS, upstream integration NOT TESTED). Synthetic policy simulation tests denial, manual approval, zero quota, consent and a transport that always rejects outbound attempts. This is a model of proposed ASSY safeguards, **not Harvey's actual runtime or real provider adapters**. No live-agent, real-network sandbox, or mocked-upstream integration test completed.
 
 ## Gate 2 — source review
 PARTIAL. AST inventory flags sender, handler, mail provider adapters, dashboard and LinkedIn; it is not a manual line-by-line source audit. No upstream source modifications or claims of security certification. Upstream revision remains unpinned and must be pinned before any reproducible approval.
@@ -22,7 +22,7 @@ OPEN, requires Egyptian licensed human legal review and platform terms review. A
 
 ## Gate 4 — final decision
 - **PASS**: CI installation smoke, static pilot checks, dependency scan, inventory generation.
-- **PENDING**: new synthetic policy CI result.
+- **PASS**: synthetic policy CI (run 41593338947; 6 modeled cases; see job logs for individual test results).
 - **NOT PASSED / NOT TESTED**: Harvey-runtime zero-send guarantees; complete code review; dashboard authorization; pinned supply chain; legal clearance; authorized local-host test.
 - **Decision: NO-GO for production**, no merging, deployment, live discovery, Gmail/Microsoft/SMTP/Instantly credentials, real contacts, sending, LinkedIn automation or DNS changes.
 - Conditional laboratory work can continue only on the isolated draft branch.
