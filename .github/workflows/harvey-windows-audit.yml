@@ -41,5 +41,5 @@ jobs:
       - name: Audit installed dependencies (fail on findings)
         shell: pwsh
         run: |
-          .\.audit-venv\Scripts\python.exe -m pip_audit --disable-pip --progress-spinner off
+          .\.audit-venv\Scripts\python.exe -m pip_audit --progress-spinner off
           if ($LASTEXITCODE -ne 0) { exit 1 }
