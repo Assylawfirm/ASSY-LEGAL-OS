@@ -1,0 +1,23 @@
+name: Harvey synthetic offline policy simulation
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'proposals/harvey/**'
+      - '.github/workflows/harvey-offline-policy.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-policy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run synthetic transport tests without Harvey or credentials
+        run: python -m unittest -v proposals/harvey/test_offline_policy_simulation.py
