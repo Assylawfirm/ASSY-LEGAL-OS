@@ -7,6 +7,8 @@ body{max-width:1140px;margin:0 auto;padding:25px 18px}
 header{background:#0047ff;color:white;border-radius:16px;padding:24px}
 h1{font-size:1.6rem;margin:0 0 7px}h2{font-size:1.15rem}
 small,.meta{color:#57627e}.warn{background:#fff6dc;border-right:5px solid #b87b00;padding:14px;border-radius:9px;margin:18px 0}
+html[dir='ltr'] .warn{border-right:0;border-left:5px solid #b87b00}
+#language-switch{float:inline-end;background:#fff;color:#0047aa;border:1px solid #fff}
 .controls{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
 input,select{border:1px solid #b9c7e6;background:white;border-radius:9px;padding:11px;font:inherit;flex:1;min-width:180px}
 article{background:white;border:1px solid #dce4f5;margin:12px 0;padding:17px;border-radius:12px}
@@ -25,40 +27,43 @@ footer{padding:20px 0;font-size:.86rem}
 <button id="reset">إعادة تعيين</button></div>
 <p id="count" role="status"></p><main id="results"></main>
 <footer>مصدر التشريع: <a href="https://egyls.com/قانون-المحاماة/" target="_blank" rel="noopener">نقابة المحامين المصرية</a>. حالة المرجع كما بتاريخ 19 أكتوبر 2026. يتطلب الاعتماد فحص الجريدة الرسمية ومنطوق الأحكام ومراجعة محامٍ مختص.</footer>
+<script src="./localization.js"></script>
 <script>
 "use strict";
+const t = source => window.ASSYArchiveLocale?.t(source) ?? source;
 const q=document.getElementById("q"),kind=document.getElementById("kind"),results=document.getElementById("results"),count=document.getElementById("count");
 let data=[];
 function paint(){
 const s=q.value.trim().toLocaleLowerCase("ar"),k=kind.value;
 const match=data.filter(x=>(k==="all"||x.kind===k)&&(x.name+" "+x.desc).toLocaleLowerCase("ar").includes(s));
-count.textContent="النتائج "+match.length+" — لا توجد نصوص معتمدة للاقتباس";
+count.textContent=t("النتائج")+" "+match.length+" — "+t("لا توجد نصوص معتمدة للاقتباس");
 results.replaceChildren();
 for(const x of match.slice(0,100)){
 const el=document.createElement("article"),h=document.createElement("h3"),p=document.createElement("p"),badge=document.createElement("span");
-h.textContent=x.name;p.textContent=x.desc;badge.textContent="قيد المراجعة — الاقتباس غير معتمد";badge.className="tag";
+h.textContent=x.name;p.textContent=x.desc;badge.textContent=t("قيد المراجعة — الاقتباس غير معتمد");badge.className="tag";
 el.append(h,p,badge);results.append(el)
 }
-if(match.length>100){const more=document.createElement("p");more.textContent="تظهر أول 100 نتيجة؛ استخدم خانة البحث لتضييق النتائج.";results.append(more)}
+if(match.length>100){const more=document.createElement("p");more.textContent=t("تظهر أول 100 نتيجة؛ استخدم خانة البحث لتضييق النتائج.");results.append(more)}
 }
 async function load(){
 try{
 const res=await fetch("./research_index_v13.json",{cache:"no-store"});
 if(!res.ok)throw new Error("HTTP "+res.status);
 const d=await res.json();
-if(d.schema!=="assy-law-index.v13"||!Array.isArray(d.articles)||d.articles.length!==238)throw new Error("تنسيق البيانات غير مطابق");
+if(d.schema!=="assy-law-index.v13"||!Array.isArray(d.articles)||d.articles.length!==238)throw new Error(t("تنسيق البيانات غير مطابق"));
 data=[
-...d.articles.map(x=>({kind:"article",name:"المادة "+x.number,desc:x.subject+" — النص الكامل غير معتمد"})),
+...d.articles.map(x=>({kind:"article",name:t("المادة")+" "+x.number,desc:x.subject+" — "+t("النص الكامل غير معتمد")})),
 ...d.cases.map(x=>({kind:"case",name:x.case_number,desc:x.summary+" | المواد "+x.articles+" | "+x.date})),
-...d.defenses.map(x=>({kind:"notice",name:"الإجراءات الجنائية — مادة "+x.provision,desc:"قيد مراجعة النص والحكم القضائي"}))
+...d.defenses.map(x=>({kind:"notice",name:t("الإجراءات الجنائية — مادة")+" "+x.provision,desc:t("قيد مراجعة النص والحكم القضائي")}))
 ];
 paint()
 }catch(err){
-count.textContent="تعذر تحميل ملف البيانات المستقل: "+err.message;
-const p=document.createElement("article");p.textContent="لتشغيل البحث افتح الصفحة عبر خادم HTTP أو GitHub Pages؛ فتح HTML مباشرة بصيغة file:// قد يمنع تحميل JSON. لم تُحمّل أية نتائج غير معتمدة.";
+count.textContent=t("تعذر تحميل ملف البيانات المستقل:")+" "+err.message;
+const p=document.createElement("article");p.textContent=t("لتشغيل البحث افتح الصفحة عبر خادم HTTP أو GitHub Pages؛ فتح HTML مباشرة بصيغة file:// قد يمنع تحميل JSON. لم تُحمّل أية نتائج غير معتمدة.");
 results.replaceChildren(p)
 }}
 q.addEventListener("input",paint);kind.addEventListener("change",paint);
+window.addEventListener("assy:archive-locale",paint);
 document.getElementById("reset").addEventListener("click",()=>{q.value="";kind.value="all";paint()});
 load();
 </script></body></html>
