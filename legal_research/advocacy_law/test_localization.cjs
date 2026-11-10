@@ -32,6 +32,7 @@ const document = {
   querySelectorAll(selector) {
     return selector === "[aria-label],[placeholder]" ? [attrInput] : [];
   },
+  getElementById(id) {return id === "language-switch" ? toggle : null;},
   createTreeWalker() {
     let i = 0;
     return {nextNode() {return nodes[i++] ?? null;}};
