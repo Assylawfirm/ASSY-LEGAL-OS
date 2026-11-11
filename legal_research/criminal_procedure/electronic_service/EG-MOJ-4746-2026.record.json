@@ -1,0 +1,173 @@
+{
+  "schema": "assy-legal-regulatory-record.v1",
+  "record_id": "ASSY-EG-CRIM-E-NOTICE-2026-001",
+  "legacy_cross_reference": "RSH-031 (prior research mention; mapping pending reconciliation)",
+  "title_ar": "تنظيم مراكز الإعلانات الهاتفية والإلكترونية وآلية عملها",
+  "title_en": "Regulation of Telephone and Electronic Judicial Notification Centres and Their Operations",
+  "jurisdiction": "EG",
+  "legal_domain": "CRIMINAL_PROCEDURE",
+  "issuer_ar": "وزير العدل",
+  "instrument_type": "ministerial_decree",
+  "instrument_number": 4746,
+  "instrument_year": 2026,
+  "issuance_date": "2026-09-07",
+  "gazette": {
+    "name_ar": "الوقائع المصرية",
+    "issue": "217 تابع",
+    "publication_date": "2026-10-01",
+    "reference_url": "https://dspace.id.com.eg/handle/123456789/8869",
+    "source_class": "gazette_reproduction_catalogue"
+  },
+  "effective_date_original": "2026-10-01",
+  "effective_date_as_amended": "2027-10-01",
+  "as_of": "2026-11-11",
+  "temporal_status": "DEFERRED_NOT_YET_EFFECTIVE",
+  "approval_state": "PRIMARY_PENDING_REVIEW",
+  "citation_approved": false,
+  "operational_rule_enabled": false,
+  "human_approval": false,
+  "text_exact_verified": false,
+  "annexes_verified": false,
+  "scope_ar": "إعلانات وإجراءات قانون الإجراءات الجنائية الجديد؛ لا يمتد تلقائيًا إلى جميع الدعاوى المدنية والتجارية.",
+  "scope_en": "Notices and procedures under the new Criminal Procedure Law; not automatically applicable to all civil or commercial proceedings.",
+  "related_instruments": [
+    {
+      "kind": "law",
+      "number": 174,
+      "year": 2025,
+      "relationship": "enabling criminal procedure law",
+      "source_url": "https://moj.gov.eg/backend/api/documents/download/20F3150C-29F1-487E-A0F0-FCCE10CB207B"
+    },
+    {
+      "kind": "law",
+      "number": 160,
+      "year": 2026,
+      "relationship": "defers new criminal procedure law commencement to 2027-10-01",
+      "source_url": "https://mpa.gov.eg/news/IKLLdU-q_5pVFJkjZqsZxnkKj_0ls8FEYGbX-bwsgtA",
+      "official_statute_page": "https://www.alamiria.com/Sec/TashTxt?id=Aalg37zxdcU%3D",
+      "primary_official_webpage_verified": true
+    },
+    {
+      "kind": "ministerial_decree",
+      "number": 5209,
+      "year": 2026,
+      "issuance_date": "2026-09-30",
+      "gazette": "217 تابع (أ), 2026-10-01",
+      "relationship": "changes article 9 date from 2026-10-01 to 2027-10-01",
+      "source_url": "https://lawhub.info/eg/?p=19571",
+      "source_class": "secondary_transcription_primary_scan_pending"
+    },
+    {
+      "kind": "ministerial_decree",
+      "number": 4704,
+      "year": 2026,
+      "relationship": "criminal procedure forms; also postponed by decree 5209",
+      "source_url": null
+    }
+  ],
+  "user_attached_scans": [
+    {
+      "page": 1,
+      "filename": "1000787456.jpg",
+      "sha256": "f24b031ccaf7edd82a89960f3e4e5e2e35e0b5413dc1f20fcbaa0c808b52a146"
+    },
+    {
+      "page": 2,
+      "filename": "1000787457.jpg",
+      "sha256": "fadc7ece474a44eea574ad3306480a2cc2e5ee4da1a98ed37c5daa8726fa682e"
+    },
+    {
+      "page": 3,
+      "filename": "1000787458.jpg",
+      "sha256": "2acde153cda399346883dce38b7cca4f8ef339f258c7076c6a0cb0eecedd15de"
+    },
+    {
+      "page": 4,
+      "filename": "1000787459.jpg",
+      "sha256": "ee66b29db6d74c44a46a1b85454201561043441a6d60a84a1397119e66ce777e"
+    }
+  ],
+  "source_handling": "User scans referenced by hash only; originals and annexed forms are NOT committed to this public repository.",
+  "article_summaries": [
+    {
+      "article": 1,
+      "ar": "إنشاء مركز بدائرة كل محكمة جزئية، واختصاصه بأعمال الإعلان الفني والإجرائي، مع تنظيم الإشراف والموظفين.",
+      "en": "A centre for each district court; technical and procedural notification functions, oversight and staffing."
+    },
+    {
+      "article": 2,
+      "ar": "الاستعلام عن بيانات الهوية والاتصال وإرسال الإعلانات وتوثيق النتائج وحفظ السجلات وفق الضوابط.",
+      "en": "Lookup of identity/contact data, dispatch of notices, reporting, logging and record retention under statutory safeguards."
+    },
+    {
+      "article": 3,
+      "ar": "إعلان الهاتف المحمول أو البريد الإلكتروني وفق بيانات قطاع الأحوال المدنية وبيانات الإعلان المحددة بالقرار.",
+      "en": "Mobile-text or email service using authorised Civil Status data and the notice particulars specified in the decree."
+    },
+    {
+      "article": 4,
+      "ar": "اشتراط مزود اتصالات مرخص أو مقدم خدمة بريد إلكتروني معتمد، وقابلية إثبات وقت الإرسال والوصول.",
+      "en": "Licensed telecommunications or authorised email service, with traceable timestamps and technical delivery evidence."
+    },
+    {
+      "article": 5,
+      "ar": "تقرير فني لكل إعلان يسجل البيانات والإجراءات ونتائج الوصول أو التعذر وإرفاق المستخرج بالملف القضائي.",
+      "en": "A technical report for each notice recording service details, outcomes and any failure, with an extract placed on the case file."
+    },
+    {
+      "article": 6,
+      "ar": "إثبات الوصول بإشعار النظام الفني، وترتيب الأثر القانوني وفق أحوال القانون عند إيداع تقرير الاستلام بالملف.",
+      "en": "Delivery is evidenced by a system notice; statutory effects follow when the prescribed receipt report is placed in the case file, where the law allows."
+    },
+    {
+      "article": 7,
+      "ar": "حفظ السجل الإلكتروني وسرية معلومات المتقاضين وعدم الإفصاح أو التداول إلا وفق القانون.",
+      "en": "Retain electronic logs, preserve confidentiality, and restrict disclosure and processing to lawful purposes."
+    },
+    {
+      "article": 8,
+      "ar": "النماذج المرافقة جزء لا يتجزأ من القرار؛ لم تظهر ضمن الصور الأربع المقدمة.",
+      "en": "Annexed forms are integral to the decree; they are absent from the four supplied scans."
+    },
+    {
+      "article": 9,
+      "ar": "تاريخ النفاذ الأصلي 1 أكتوبر 2026؛ عُدل إلى 1 أكتوبر 2027 بموجب القرار 5209 لسنة 2026.",
+      "en": "Originally 1 October 2026; amended to 1 October 2027 by Decree 5209/2026."
+    }
+  ],
+  "safeguards": {
+    "no_current_case_deadline_calculation": true,
+    "no_assumption_of_operational_court_centres": true,
+    "no_universal_civil_service_extension": true,
+    "sms_dispatch_alone_not_conclusive_service": true,
+    "distinguish_delivered_from_personally_read": true,
+    "require_human_case_specific_legal_review": true,
+    "recheck_law_before_2027_10_01": true,
+    "preserve_old_version_and_amendment_event": true
+  },
+  "open_verification_items": [
+    "Obtain full, legible Gazette original including annexed model forms and page numbering for Decree 4746/2026.",
+    "Obtain primary Gazette scan (217 supplementary A) for Decree 5209/2026 and verify amendment wording.",
+    "Confirm exact text article-by-article, source-page references, later amendments/corrections and independent reviewer approval.",
+    "Reconcile with existing central RSH-031/master corpus record and avoid duplicate production index entries."
+  ],
+  "publish_control": "STAGING_ONLY_NO_MAIN_MERGE_NO_CLIENT_NOTICES_NO_DEADLINE_AUTOMATION",
+  "governance_authorization": {
+    "institutional_reference_inclusion_approved": true,
+    "approval_date": "2026-11-11",
+    "authority": "ASSY LAW FIRM / ASSY LEGAL OS sovereign owner",
+    "authorization_basis": "Explicit instruction 'اعتمد' following review-branch preparation",
+    "approved_scope_ar": "إدراج السجل التشريعي ثنائي اللغة في الفرع الرئيسي بصفته مرجعًا مؤسسيًا مؤجل النفاذ، مع الإبقاء على حظر الاستشهاد الآلي وتفعيل قواعد المواعيد.",
+    "approved_scope_en": "Merge bilingual legislation reference into main as a deferred legal research entry, preserving restrictions on automated citation and procedural deadline activation.",
+    "not_approved": [
+      "Primary-source-verification override",
+      "VERIFIED_CITABLE promotion",
+      "Client notifications",
+      "Production deadline rules",
+      "External publication beyond existing public repository"
+    ],
+    "human_legal_text_review_completed": false
+  },
+  "review_status_note_ar": "اعتماد إدراج مرجعي مؤسسي لا يُعد تصديقًا نهائيًا على النص الحرفي أو الملاحق أو صلاحية الاحتجاج القضائي.",
+  "review_status_note_en": "Institutional archival approval is distinct from final verification of exact statutory text, annexes, or courtroom citation authority."
+}
