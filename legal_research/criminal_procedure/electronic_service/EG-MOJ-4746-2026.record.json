@@ -43,7 +43,9 @@
       "number": 160,
       "year": 2026,
       "relationship": "defers new criminal procedure law commencement to 2027-10-01",
-      "source_url": "https://mpa.gov.eg/news/IKLLdU-q_5pVFJkjZqsZxnkKj_0ls8FEYGbX-bwsgtA"
+      "source_url": "https://mpa.gov.eg/news/IKLLdU-q_5pVFJkjZqsZxnkKj_0ls8FEYGbX-bwsgtA",
+      "official_statute_page": "https://www.alamiria.com/Sec/TashTxt?id=Aalg37zxdcU%3D",
+      "primary_official_webpage_verified": true
     },
     {
       "kind": "ministerial_decree",
@@ -149,5 +151,23 @@
     "Confirm exact text article-by-article, source-page references, later amendments/corrections and independent reviewer approval.",
     "Reconcile with existing central RSH-031/master corpus record and avoid duplicate production index entries."
   ],
-  "publish_control": "STAGING_ONLY_NO_MAIN_MERGE_NO_CLIENT_NOTICES_NO_DEADLINE_AUTOMATION"
+  "publish_control": "STAGING_ONLY_NO_MAIN_MERGE_NO_CLIENT_NOTICES_NO_DEADLINE_AUTOMATION",
+  "governance_authorization": {
+    "institutional_reference_inclusion_approved": true,
+    "approval_date": "2026-11-11",
+    "authority": "ASSY LAW FIRM / ASSY LEGAL OS sovereign owner",
+    "authorization_basis": "Explicit instruction 'اعتمد' following review-branch preparation",
+    "approved_scope_ar": "إدراج السجل التشريعي ثنائي اللغة في الفرع الرئيسي بصفته مرجعًا مؤسسيًا مؤجل النفاذ، مع الإبقاء على حظر الاستشهاد الآلي وتفعيل قواعد المواعيد.",
+    "approved_scope_en": "Merge bilingual legislation reference into main as a deferred legal research entry, preserving restrictions on automated citation and procedural deadline activation.",
+    "not_approved": [
+      "Primary-source-verification override",
+      "VERIFIED_CITABLE promotion",
+      "Client notifications",
+      "Production deadline rules",
+      "External publication beyond existing public repository"
+    ],
+    "human_legal_text_review_completed": false
+  },
+  "review_status_note_ar": "اعتماد إدراج مرجعي مؤسسي لا يُعد تصديقًا نهائيًا على النص الحرفي أو الملاحق أو صلاحية الاحتجاج القضائي.",
+  "review_status_note_en": "Institutional archival approval is distinct from final verification of exact statutory text, annexes, or courtroom citation authority."
 }
