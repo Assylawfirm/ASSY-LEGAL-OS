@@ -1,0 +1,75 @@
+# ASSY LAW FIRM Harvey pilot — overlay candidate, NOT an installed configuration
+# Review after harvey train: effective settings may be in harvey.local.yaml.
+persona:
+  name: "Hussein Fahmy Assy"
+  company: "ASSY LAW FIRM"
+  role: "Founder and CEO — Attorney at the Court of Cassation"
+  email: "info@assylawfirm.com"
+  tone: "professional, concise, consultative, Arabic or English"
+product:
+  name: "ASSY LAW FIRM Legal Services"
+  description: "Egyptian legal services for individuals, companies and foreign investors: corporate formation, commercial contracts, trademarks, property due diligence and litigation."
+  pricing: "By individual written engagement and agreed fee"
+  key_benefits:
+    - "Legal advice grounded in Egyptian law and individual circumstances"
+    - "Corporate and real estate legal due diligence"
+    - "Bilingual client communication"
+  offer:
+    primary: "Legal services by engagement"
+    entry: "Optional 15-minute introductory discovery call; not a free legal opinion"
+    goal: "book_call"
+    booking_method: "ask_preference"
+    booking_url: ""
+    meeting_duration: "15 minutes"
+    meeting_owner: "Hussein Fahmy Assy"
+icp:
+  industries:
+    - "Hospitality"
+    - "Real Estate Development"
+    - "Small and Medium Enterprises"
+    - "Startups"
+    - "Foreign Investment"
+  company_size: "2-50 employees"
+  titles:
+    - "Founder"
+    - "Managing Director"
+    - "General Manager"
+    - "Legal Manager"
+  geography:
+    - "Hurghada, Red Sea, Egypt"
+    - "Cairo, Egypt"
+  hiring_signals: []
+channels:
+  email:
+    enabled: false
+    provider: "gmail"
+    max_daily_sends: 0
+    require_approval: true
+    link_domains:
+      - "assylawfirm.com"
+    send_to_risky: false
+    max_bounce_rate: 0.05
+    signature:
+      logo: ""
+      width: 120
+      alt: "ASSY LAW FIRM"
+      link: "https://assylawfirm.com"
+      direction: "auto"
+  linkedin:
+    enabled: false
+usage:
+  max_daily_claude_percent: 20
+  heartbeat_interval_minutes: 15
+  quiet_hours:
+    start: "22:00"
+    end: "07:00"
+    timezone: "Africa/Cairo"
+compliance:
+  postal_address: ""
+  opt_out_line: 'If you prefer not to receive further messages, please reply "no thanks".'
+  do_not_contact: []
+  precleared:
+    enabled: false
+    sender_country: "EG"
+    address_source: "unknown"
+    prospect_country: "EG"

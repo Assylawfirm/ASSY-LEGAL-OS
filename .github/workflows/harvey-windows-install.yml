@@ -1,0 +1,67 @@
+name: Harvey Windows isolated install smoke test
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'proposals/harvey/**'
+      - '.github/workflows/harvey-windows-install.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows-install-smoke:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    env:
+      PYTHONNOUSERSITE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+      HARVEY_EMAIL_ENABLED: 'false'
+    steps:
+      - name: Checkout pilot without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Configure Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify pilot fail-closed config first
+        shell: pwsh
+        run: |
+          python -m pip install PyYAML==6.0.2
+          Copy-Item proposals/harvey/harvey.pilot.yaml harvey.yaml
+          python proposals/harvey/verify_sending_disabled.py .
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Clone upstream into isolated test directory
+        shell: pwsh
+        run: |
+          git clone --depth 1 https://github.com/ethanplusai/harvey.git upstream-harvey
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          git -C upstream-harvey rev-parse HEAD
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Create isolated Python virtual environment
+        shell: pwsh
+        run: |
+          python -m venv upstream-harvey/.venv
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Install Harvey dependencies and check resolution
+        shell: pwsh
+        run: |
+          .\upstream-harvey\.venv\Scripts\python.exe -m pip install --disable-pip-version-check -e ./upstream-harvey
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          .\upstream-harvey\.venv\Scripts\python.exe -m pip check
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Import installed Harvey package without starting agent
+        shell: pwsh
+        run: |
+          .\upstream-harvey\.venv\Scripts\python.exe -c "import harvey; import harvey.config; import harvey.cli; print('IMPORT_SMOKE_PASS')"
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Record installed package versions for review
+        shell: pwsh
+        run: |
+          .\upstream-harvey\.venv\Scripts\python.exe -m pip freeze | Out-File -Encoding utf8 harvey-dependencies.txt
+          Get-Content harvey-dependencies.txt | Select-Object -First 60
+      - name: Confirm no send or discovery stage executed
+        shell: pwsh
+        run: |
+          Write-Host "Only clone, pip install, pip check, imports. No credentials, discovery, heartbeat, dashboard, or outbound messages."

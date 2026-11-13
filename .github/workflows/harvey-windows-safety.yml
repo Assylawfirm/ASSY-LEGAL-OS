@@ -1,0 +1,50 @@
+name: Harvey Windows isolated safety checks
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'proposals/harvey/**'
+      - '.github/workflows/harvey-windows-safety.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: harvey-windows-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  offline-safety:
+    runs-on: windows-latest
+    timeout-minutes: 12
+    env:
+      HARVEY_EMAIL_ENABLED: "false"
+      HARVEY_MAX_DAILY_SENDS: "0"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install YAML parser only
+        run: python -m pip install PyYAML==6.0.2
+      - name: Compile offline test and guard
+        run: python -m py_compile proposals/harvey/verify_sending_disabled.py proposals/harvey/test_verify_sending_disabled.py
+      - name: Run offline fail-closed tests
+        run: python -m unittest discover -s proposals/harvey -p 'test_*.py' -v
+      - name: Check pilot config has no outbound enabled
+        shell: pwsh
+        run: |
+          Copy-Item proposals/harvey/harvey.pilot.yaml harvey.yaml
+          python proposals/harvey/verify_sending_disabled.py .
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Validate PowerShell script syntax without executing it
+        shell: pwsh
+        run: |
+          $errors = $null
+          $tokens = $null
+          [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path proposals/harvey/bootstrap-windows.ps1).Path,
+            [ref]$tokens, [ref]$errors
+          ) | Out-Null
+          if ($errors.Count -gt 0) { $errors | Out-String | Write-Error; exit 1 }
+          Write-Host "PowerShell syntax OK; bootstrap NOT executed"

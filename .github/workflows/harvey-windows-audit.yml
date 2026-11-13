@@ -1,0 +1,50 @@
+name: Harvey Windows dependency vulnerability audit
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'proposals/harvey/**'
+      - '.github/workflows/harvey-windows-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dependency-audit:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch Harvey source and record exact revision
+        shell: pwsh
+        run: |
+          git clone --depth 1 https://github.com/ethanplusai/harvey.git upstream-harvey
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          git -C upstream-harvey rev-parse HEAD
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Create isolated environment
+        shell: pwsh
+        run: |
+          python -m venv .audit-venv
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Upgrade packaging tools before installing upstream
+        shell: pwsh
+        run: |
+          .\\.audit-venv\\Scripts\\python.exe -m pip install --upgrade 'pip>=26.2' 'setuptools>=84.1.0'
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Install Harvey and pip-audit
+        shell: pwsh
+        run: |
+          .\.audit-venv\Scripts\python.exe -m pip install -e ./upstream-harvey pip-audit
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+          .\.audit-venv\Scripts\python.exe -m pip check
+          if ($LASTEXITCODE -ne 0) { exit 1 }
+      - name: Audit installed dependencies (fail on findings)
+        shell: pwsh
+        run: |
+          .\.audit-venv\Scripts\python.exe -m pip_audit --progress-spinner off
+          if ($LASTEXITCODE -ne 0) { exit 1 }
