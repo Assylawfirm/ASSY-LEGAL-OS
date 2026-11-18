@@ -1,0 +1,24 @@
+name: Saudi Fees Template Review (non-production)
+on:
+  pull_request:
+    paths:
+      - 'governance/sa-fees/**'
+      - '.github/workflows/sa-fees-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-review-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Validate Python sources
+        run: python3 -m compileall -q governance/sa-fees
+      - name: Unit and integration policy regression
+        run: python3 -m unittest discover -s governance/sa-fees -p 'test_policy.py' -v
+      - name: Fail-closed policy and basic secret checks
+        run: python3 governance/sa-fees/validate_policy.py

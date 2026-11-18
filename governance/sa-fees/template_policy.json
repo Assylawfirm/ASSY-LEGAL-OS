@@ -1,0 +1,33 @@
+{
+  "policy_id": "ASSY-SA-FEE-PROPOSAL-MASTER-2026-001",
+  "version": "1.0",
+  "jurisdiction": "SA",
+  "status": "REVIEW_ONLY",
+  "production_enabled": false,
+  "client_data_ingestion_enabled": false,
+  "contract_auto_accept_enabled": false,
+  "requires_licensed_lawyer": true,
+  "requires_independent_legal_review": true,
+  "requires_identity_check": true,
+  "requires_conflict_check": true,
+  "requires_client_authority_check": true,
+  "requires_matter_scope": true,
+  "requires_fee_approval": true,
+  "requires_tax_decision": true,
+  "requires_human_signature": true,
+  "outcome_guaranteed": false,
+  "ordinary_litigation_scope": [
+    "first_instance",
+    "ordinary_appeal_when_available"
+  ],
+  "fees_distribution": [
+    50,
+    25,
+    25
+  ],
+  "third_fee_trigger": "appeal_final_judgment_or_first_instance_finality",
+  "exceptional_appeals_default_included": false,
+  "enforcement_default_included": false,
+  "document_sha256": "6a603b77c7c806f17f78626c2876d387c94ba98dd5a3b9dfbe72d0ac33a5b636",
+  "public_sources_only": true
+}

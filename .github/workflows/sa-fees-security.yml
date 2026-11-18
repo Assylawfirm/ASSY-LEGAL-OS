@@ -1,0 +1,25 @@
+name: Saudi Fees Static Security (review only)
+on:
+  pull_request:
+    paths:
+      - 'governance/sa-fees/**'
+      - '.github/workflows/sa-fees-security.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python syntax verification
+        run: python3 -m compileall -q governance/sa-fees
+      - name: Narrow static security checks
+        run: python3 governance/sa-fees/security_review.py
+      - name: Security policy regression
+        run: python3 -m unittest discover -s governance/sa-fees -p 'test_security.py' -v
+      - name: Bandit static analysis
+        run: |
+          python3 -m pip install --disable-pip-version-check bandit
+          bandit -r governance/sa-fees -ll
